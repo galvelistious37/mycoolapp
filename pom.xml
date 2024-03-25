@@ -59,6 +59,18 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+
+		<!-- ADD SUPPORT FOR SPRING SECURITY
+			Dev Process:
+			1. edit pom.xml and add spring-boot-starter-security
+			2. verify security on actuator endpoints for :/beans etc
+			3. Disable endpoints for /health and /info
+		-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
