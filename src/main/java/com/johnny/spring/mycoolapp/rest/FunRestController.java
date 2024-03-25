@@ -24,4 +24,15 @@ public class FunRestController {
         return msg;
     }
 
+    // expose a new endpoint for "workout"
+    @GetMapping("/workout")
+    public String getDailWorkout(){
+        return "Run a hard 5k!";
+    }
+
+    // Expose a new endpoint for "fortune"
+    @GetMapping("/fortune")
+    public String getDailyFortune(){
+        return "Today is your lucky day.";
+    }
 }
