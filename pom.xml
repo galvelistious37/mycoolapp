@@ -17,15 +17,31 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+
+		<!-- Common spring dependencies grouped into one 'starter' dependency -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- Common dependencies for test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<!-- Allow code updates to be picked up without having to restart app -->
+		<!--
+			Additional setup needed for IntelliJ
+		 	file -> settings -> Build, Execution, Deployment -> Compiler ->
+		 		Check the 'Build project automatically' box
+		 	file -> settings -> advanced settings ->
+		 		Check the 'Allow auto-make to start...' box
+		 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 	</dependencies>
 

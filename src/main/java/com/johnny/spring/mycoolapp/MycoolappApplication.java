@@ -9,6 +9,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * cd to app root directory
  * mvn package
  * mvn spring-boot:run
+ *
+ * Development Process:
+ * 	1 - Apply IntelliJ configurations
+ * 	2 - Edit pom.xml and add spring-boot-devtools
+ * 	3 - Add new REST endpoints to our app
+ * 	4 - Verify the app automatically reloaded
  */
 @SpringBootApplication
 public class MycoolappApplication {
