@@ -38,10 +38,26 @@
 		 		Check the 'Build project automatically' box
 		 	file -> settings -> advanced settings ->
 		 		Check the 'Allow auto-make to start...' box
+		 	Development Process:
+			1. Apply IntelliJ configurations
+			2. Edit pom.xml and add spring-boot-devtools
+			3. Add new REST endpoints to our app
+			4. Verify the app automatically reloaded
 		 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+
+		<!-- Exposes new REST endpoints for metrics and health/status -->
+		<!-- Steps
+		 	1. edit pom.xml and add spring-boot-starter-actuator
+		 	2. view actuator endpoints for <host>:<port>/actuator/health
+		 	3. edit application.properties to customize /info
+		 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
 
